@@ -1,12 +1,14 @@
 body {
     margin: 0;
+  
 }
 
 .gallery-block {
-    padding-bottom: 60px;
-    padding-top: 60px;
     border-style: solid;
-    background: #301d1d;
+ height: 100vh;
+    overflow: hidden;
+
+    
     
 }
 
@@ -37,14 +39,20 @@ body {
 }
 
 .container {
-    border-style: solid;
     position: relative;
     padding: 5%;
-    background: coral;
+     background: #f4f4f4;
+    overflow-y: scroll;
+    height: 100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+
 
 }
 .row {
+    justify-content: center;  
+}
 
-    justify-content: center;
-   
+.container::-webkit-scrollbar {
+    display: none;
 }
